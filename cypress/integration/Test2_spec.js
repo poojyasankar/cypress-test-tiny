@@ -1,16 +1,9 @@
-import * as CommonCommands from "../support/CommonCommands";
-import * as ViewCommands from "../support/ViewCommands";
-import * as globals from '../support/commands';
-
+import {variableName} from "./Test1_spec"
 describe('Routine Production Test 3', ()=>{
     beforeEach(function () {
-        cy.visit('https://3d.connect.trimble.com');
-        CommonCommands.clickElement('.button');
-        CommonCommands.clickElement('[title="Accept Cookies"]');
+      console.log(variableName)
       })
 
       it('ConnectTest2',()=>{
-        CommonCommands.assertElementShould('div.trimble-splashscreen-banner','not.exist');
-        CommonCommands.loadProject('SketchUp');  
       })
 })
